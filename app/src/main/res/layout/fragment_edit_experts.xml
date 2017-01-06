@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.EditExpertFragment"
+    android:orientation="vertical"
+    style="@style/linearLayoutExpertManagementStyle">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewEditExpertsID"
+            style="@style/textViewFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/id" />
+
+        <Spinner
+            android:id="@+id/spinnerIDs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style = "@style/simpleSpinner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textViewFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ratings" />
+
+        <EditText
+            android:id="@+id/editTextExpertsRatings"
+            style="@style/editTextFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A, B, C, D" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/textViewFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/importance" />
+
+        <EditText
+            android:id="@+id/editTextExpertsImportance"
+            style="@style/editTextFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="43" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonEditExpert"
+            style="@style/buttonFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/buttonRemoveExpert"
+            style="@style/buttonFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/remove"/>
+
+    </LinearLayout>
+</LinearLayout>
